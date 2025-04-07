@@ -1,0 +1,18 @@
+{
+  "include": ["electron.vite.config.*", "src/main/**/*", "src/preload/**/*", "global.d.ts"],
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "strict": true,
+    "types": ["electron-vite/node"],
+    "baseUrl": "./",
+    "paths": {
+      "@main/*": ["src/main/*"],
+    }
+  }
+}

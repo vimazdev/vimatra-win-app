@@ -1,0 +1,39 @@
+:root {
+    --height-titleBar: 35px;
+
+
+    /* Transitions */
+    --transition-fast: 0 0.01s ease;
+    --transition-medium: 0.3s ease;
+    --transition-slow: 200ms ease;
+
+    --transition-color: color var(--transition-fast);
+    --transition-background: background-color var(--transition-medium);
+    --transition-border: border-color var(--transition-fast);
+    --transition-opacity: opacity var(--transition-medium);
+    --transition-transform: transform var(--transition-fast);
+
+    /* Tamaños de fuente para botones */
+    --font-size-button-small: 12px;
+    --font-size-button-medium: 16px;
+    --font-size-button-large: 20px;
+
+    /* Tamaños de fuente para subtítulos */
+    --font-size-subtitle-small: 14px;
+    --font-size-subtitle-medium: 18px;
+    --font-size-subtitle-large: 22px;
+
+    /* Tamaños de fuente para títulos */
+    --font-size-title-small: 20px;
+    --font-size-title-medium: 28px;
+    --font-size-title-large: 36px;
+
+    /* Tamaños de fuente para texto normal */
+    --font-size-text-litter: 11px;
+    --font-size-text-small: 14px;
+    --font-size-text-medium: 16px;
+    --font-size-text-large: 18px;
+
+    /* Other */
+    --shadow-35: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}

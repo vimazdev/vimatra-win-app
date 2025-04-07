@@ -1,0 +1,143 @@
+.setting-bar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--slate-tint-10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.setting-bar>.container-setting {
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    min-width: 500px;
+    min-height: 280px;
+    padding: 15px 30px 0px 25px;
+    user-select: none;
+}
+
+.setting-bar>.container-setting>footer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 0;
+}
+
+.setting-bar>.container-setting>footer button {
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: var(--color-danger);
+    cursor: pointer;
+    color: var(--btn-primary-text);
+    font-size: 10px;
+}
+
+.container-setting>.title {
+    width: 100%;
+    border-bottom: 1px solid var(--color-border);
+    padding: 5px 0 10px 0;
+}
+
+.container-setting .content_setting {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+.content_setting>nav {
+    width: 100%;
+    padding: 10px 5px 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_setting>nav button {
+    width: 100%;
+    text-align: start;
+    color: var(--btn-primary-text) !important;
+    padding: 7px 5px;
+    /* border-radius: 3px; */
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    font-size: var(--font-size-button-small);
+    background-color: var(--btn-primary-bg) !important;
+    font-weight: 500;
+}
+
+.content_setting>nav button:hover {
+    background-color: var(--btn-primary-hover) !important;
+    transition: var(--transition-medium) !important;
+}
+
+.content_setting>nav button.active {
+    background-color: var(--color-surface);
+    border-color: var(--color-surface);
+}
+
+.content_setting .view-content_setting {
+    padding: 10px 5px 10px 10px;
+    margin-left: 10px;
+    border-left: 1px solid var(--color-border);
+    font-size: var(--font-size-text-small);
+}
+
+.content_setting .view-content_setting section>div {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.view-content_setting * .setting p {
+    font-size: 10px;
+    color: var(--color-text-subtext);
+    margin-bottom: 7px;
+    font-weight: 200;
+    /* font-style: italic; */
+}
+
+.view-content_setting * .setting h5 {
+    color: var(--color-text-secundary-app);
+    margin-bottom: 3px;
+}
+
+.view-content_setting * .setting .logo-setting {
+    color: var(--color-text-secundary-app);
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background-color: var(--btn-primary-bg);
+}
+
+.view-content_setting * .setting .switch_theme {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.view-content_setting * .setting .switch_theme span {
+    font-size: 10px;
+}

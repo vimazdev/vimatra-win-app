@@ -1,0 +1,109 @@
+.titleBar {
+    -webkit-app-region: drag;
+    min-width: 100vw !important;
+    height: var(--height-titleBar);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Buttons Windows */
+.titleBar .ButtonWindows {
+    width: max-content;
+    height: var(--height-titleBar);
+    display: flex;
+    justify-content: centere;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.ButtonWindows button {
+    -webkit-app-region: no-drag;
+    width: 30px;
+    min-height: var(--height-titleBar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--btn-secondary-text) !important;
+
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ButtonWindows button:hover {
+    background-color: var(--element-hover);
+}
+
+.ButtonWindows button.close:hover {
+    background-color: var(--color-error) !important;
+    color: white !important;
+}
+
+/* Button Setting */
+.titleBar .buttonSetting {
+    position: relative;
+    -webkit-app-region: no-drag !important;
+    height: 25px;
+    margin: 0 5px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: nowrap;
+}
+
+.buttonSetting button {
+    -webkit-app-region: no-drag !important;
+    width: max-content;
+    height: 25px;
+    padding: 0 7px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--btn-secondary-text);
+    border-radius: 5px;
+    box-shadow: var(--shadow-35) !important;
+}
+
+.buttonSetting button:hover {
+    background-color: var(--element-hover);
+}
+
+.buttonSetting .tooltip-containe {
+    -webkit-app-region: no-drag !important;
+}
+
+
+/* Container Logo */
+.titleBar .titleLogo {
+    flex: 1;
+    height: var(--height-titleBar);
+}
+
+.titleLogo .logo {
+    width: max-content;
+    height: var(--height-titleBar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding-left: 7px;
+}
+
+.titleLogo .logo img {
+    width: 22px;
+}
+
+.titleLogo .logo h5 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}

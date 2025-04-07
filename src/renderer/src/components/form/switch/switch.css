@@ -1,0 +1,35 @@
+:root {
+    --width-switch: 35px;
+    --height-switch: 14px;
+    --padding-switch: 3px;
+}
+
+.content_switch {
+    position: relative;
+    width: var(--width-switch);
+    height: var(--height-switch);
+    border-radius: calc(var(--height-switch) / 2);
+    background-color: var(--color-button-switch);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    cursor: pointer;
+}
+
+.content_switch .circle_action {
+    position: absolute;
+    width: calc(var(--height-switch) - calc(var(--padding-switch) * 2));
+    height: calc(var(--height-switch) - calc(var(--padding-switch) * 2));
+    top: 0;
+    left: var(--padding-switch);
+    bottom: 0;
+    margin: auto;
+    background-color: var(--color-button-circle);
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    transform: translateX(0);
+}
+
+.content_switch.active .circle_action {
+    transform: translateX(calc(var(--width-switch) - calc(var(--height-switch))
+                /* círculo ≈ alto */
+            ));
+}

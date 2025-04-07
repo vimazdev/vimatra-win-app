@@ -1,0 +1,91 @@
+:root {
+    /* Light Theme Colors */
+    --color-bg: #f8fafc;
+    /* slate-50 */
+    --color-surface: #ffffff;
+    --color-border: #e2e8f0;
+    /* slate-200 */
+    --color-text: #0f172a;
+    --color-text-subtext: #a0adb5;
+    /* slate-900 */
+
+    /* Primary Button */
+    --btn-primary-bg: #007ac1;
+    /* blue-500 */
+    --btn-primary-hover: #04659d;
+    /* blue-400 */
+    --btn-primary-text: #ffffff;
+
+    /* Secondary Button */
+    --btn-secondary-bg: #e2e8f0;
+    /* slate-200 */
+    --btn-secondary-hover: #cbd5e1;
+    /* slate-300 */
+    --btn-secondary-text: #1e293b;
+    /* slate-800 */
+
+    /* Accent */
+    --color-accent: #10b981;
+    /* emerald-500 */
+    --color-accent-hover: #059669;
+    /* emerald-600 */
+
+    /* Error / Warning / Success */
+    --color-error: #ef4444;
+    --color-danger: #cb5555;
+    /* red-500 */
+    --color-warning: #f59e0b;
+    /* amber-500 */
+    --color-success: #22c55e;
+    /* green-500 */
+
+    --element-hover: var(--slate-tint-5);
+
+}
+
+[data-theme="dark"] {
+    /* Dark Theme Colors */
+    --color-bg: #001526;
+    /* Compornes */
+    --color-bg-components: #01182a;
+    /* slate-900 */
+    --color-surface: #001525;
+    /* slate-800 */
+    --color-border: #232931da;
+    /* slate-700 */
+    --color-text: #f1f5f9;
+    --color-text-subtext: #a0adb5;
+    /* slate-100 */
+
+    /* Primary Button */
+    --btn-primary-bg: #007ac1;
+    /* blue-500 */
+    --btn-primary-hover: #04659d;
+    /* blue-400 */
+    --btn-primary-text: #ffffff;
+
+    /* Secondary Button */
+    --btn-secondary-bg: #334155;
+    /* slate-700 */
+    --btn-secondary-hover: #475569;
+    /* slate-600 */
+    --btn-secondary-text: #f1f5f9;
+    /* slate-100 */
+
+    /* Accent */
+    --color-accent: #22d3ee;
+    /* cyan-400 */
+    --color-accent-hover: #06b6d4;
+    /* cyan-500 */
+
+    /* Error / Warning / Success */
+    --color-error: #f87171;
+    --color-danger: #cb5555;
+    /* red-400 */
+    --color-warning: #fbbf24;
+    /* amber-400 */
+    --color-success: #4ade80;
+    /* green-400 */
+
+    --element-hover: var(--slate-tint-70);
+}

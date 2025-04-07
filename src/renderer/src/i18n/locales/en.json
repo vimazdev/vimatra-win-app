@@ -1,0 +1,19 @@
+{
+    "setting": {
+        "title": "System Settings",
+        "b-close": "Close",
+        "basic": {
+            "label": "Basic",
+            "section-lang": {
+                "t-lang": "Language",
+                "p-description": "Set the application's language"
+            },
+            "section-theme": {
+                "t-theme": "Theme",
+                "p-description": "Switch to the mode you prefer",
+                "b-dark": "Dark",
+                "b-light": "Light"
+            }
+        }
+    }
+}

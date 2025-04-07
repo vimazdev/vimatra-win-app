@@ -1,0 +1,80 @@
+.form-select {
+    width: auto;
+    min-height: 25px;
+    min-width: 60px;
+    position: relative;
+    font-size: var(--font-size-text-litter);
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    user-select: none;
+    border-radius: 2px;
+    background-color: var(--color-surface);
+
+    display: flex;
+    justify-content: centere;
+    align-items: center;
+}
+
+.form-select>div {
+    width: 100%;
+    flex: 1;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    gap: 10px;
+
+}
+
+.form-select>div .select-icon {
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-select>div .select-icon.open {
+    transform: rotate(180deg);
+}
+
+/* Estilos para el menú desplegable */
+.form-select>ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+
+    /* Transición por escala */
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 100ms ease;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-top: none;
+    z-index: 10;
+}
+
+/* Estado activo del menú */
+.form-select>ul.active {
+    transform: scaleY(1);
+}
+
+.form-select>ul li {
+    min-height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 3px;
+}
+
+.form-select>ul li:hover {
+    background-color: var(--element-hover);
+}

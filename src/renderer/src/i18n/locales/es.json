@@ -1,0 +1,19 @@
+{
+    "setting": {
+        "title": "Configuración del sistema",
+        "b-close": "Cerrar",
+        "basic": {
+            "label": "Basico",
+            "section-lang": {
+                "t-lang": "Lenguaje",
+                "p-description": "Configura el idioma de la aplicación"
+            },
+            "section-theme": {
+                "t-theme": "Tema",
+                "p-description": "Cambia al modo que prefieras",
+                "b-dark": "Oscuro",
+                "b-light": "Claro"
+            }
+        }
+    }
+}

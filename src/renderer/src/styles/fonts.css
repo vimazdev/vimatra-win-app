@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../../../resources/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url("../../../../resources/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
