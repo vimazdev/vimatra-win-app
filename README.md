@@ -1,6 +1,6 @@
 # Vimatra-app
 
-An Electron application with React and TypeScript
+Un producto de Vimaz Dev.
 
 ## Recommended IDE Setup
 
